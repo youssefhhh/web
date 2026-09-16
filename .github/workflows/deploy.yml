@@ -42,10 +42,11 @@ jobs:
       - name: Build static site
         run: npm run build
         env:
-          # e.g. "/web" and "https://youssefhhh.github.io/web" — detected automatically,
-          # and they follow a custom domain if you add one later.
+          # Read from the Pages settings on every run: with the custom domain this is
+          # "" and "https://mdriveacademy.com". After changing the domain in Settings → Pages,
+          # re-run this workflow so asset paths and canonical URLs match the new address.
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
-          NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.base_url }}
+          NEXT_PUBLIC_SITE_URL: https://${{ steps.pages.outputs.host }}${{ steps.pages.outputs.base_path }}
           # Optional: Settings → Secrets and variables → Actions → Variables → GOOGLE_SITE_VERIFICATION
           NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
           NEXT_TELEMETRY_DISABLED: 1

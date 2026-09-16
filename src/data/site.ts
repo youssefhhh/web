@@ -16,8 +16,8 @@ export const site = {
   name: "M Drive",
   legalName: "Mena Drive Academy",
   /** Public URL without a trailing slash. The GitHub Pages workflow sets it automatically. */
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://youssefhhh.github.io/web").replace(/\/+$/, ""),
-  /** Sub-path the site is served from on GitHub Pages (e.g. "/web"). */
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://mdriveacademy.com").replace(/\/+$/, ""),
+  /** Sub-path the site is served from ("" on the custom domain, "/web" on a github.io project URL). */
   basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? "",
   city: { en: "Cairo, Egypt", ar: "القاهرة، مصر" } as Localized,
   contact: {

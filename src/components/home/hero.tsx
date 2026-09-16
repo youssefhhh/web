@@ -33,7 +33,7 @@ export function Hero({ locale, dict }: HeroProps) {
               </span>
               {hero.eyebrow}
             </span>{" "}
-            <span className="mt-8 block font-display text-[clamp(2.6rem,8.2vw,5.4rem)] leading-[0.98] font-extrabold tracking-[-0.035em] rtl:text-[clamp(3.2rem,11vw,6.4rem)] rtl:leading-[1.25] rtl:tracking-normal">
+            <span className="mt-8 block font-display text-[clamp(2.6rem,8.2vw,5.4rem)] leading-[0.98] ltr:max-[359px]:text-[2.2rem] font-extrabold tracking-[-0.035em] rtl:text-[clamp(3.2rem,11vw,6.4rem)] rtl:leading-[1.25] rtl:tracking-normal">
               {hero.title.map((line, index) => (
                 <span
                   key={line}

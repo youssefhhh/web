@@ -132,7 +132,7 @@ export function Header({ locale, nav, a11y }: HeaderProps) {
               <Phone aria-hidden className="size-4 text-glow-400" />
               <span dir="ltr">{site.contact.phoneDisplay}</span>
             </a>
-            <Link href={href(locale, "/book")} className={buttonClass("primary", "sm", "hidden sm:inline-flex")}>
+            <Link href={href(locale, "/book")} className={buttonClass("primary", "sm", "max-[359px]:hidden")}>
               {nav.book}
               <ButtonArrow />
             </Link>

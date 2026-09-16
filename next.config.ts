@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
 /**
- * GitHub Pages serves this repo from `/<repo-name>` (e.g. /web).
- * The deploy workflow passes the right value; locally it stays empty.
+ * "" on the custom domain, or `/<repo-name>` (e.g. /web) on a github.io project URL.
+ * The deploy workflow reads it from the Pages settings; locally it stays empty.
  */
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
