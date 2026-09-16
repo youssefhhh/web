@@ -1,0 +1,6 @@
+# Keep LF line endings everywhere (matches the Linux build on GitHub Actions).
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.ico binary
